@@ -19,7 +19,7 @@ Initiate recon by **nmap** command:
   
 After inspect the home page source code, we found an url that is use to login. Next we can login as guest.
   
-  ![sourecode|446](/assets/img/Oopsie/inspect_homepage.png)
+  ![sourecode](/assets/img/Oopsie/inspect_homepage.png)
 
 ## **Exploitation**
 There is an IDOR vunerbility on web browser url that enable us to access admin's access token and username. 
