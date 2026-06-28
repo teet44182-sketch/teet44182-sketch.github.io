@@ -81,7 +81,7 @@ that mean we can ultilize teqnique called **"Path Hijacking"**.
 ```PATH=/tmp:$PATH ```
 ```export PATH```
 
-then run the program again, this time we escalate as root.
+then run the program again, this time we escalate as root
 
 ![path](path_hijacking.png)
 
