@@ -83,7 +83,7 @@ that mean we can ultilize teqnique called **"Path Hijacking"**.
 
 then run the program again, this time we escalate as root
 
-![path้hijack](path_hijacking.png)
+![pathhijac](path_hijacking.png)
 
 Root flag can be found at ```/root```
 
