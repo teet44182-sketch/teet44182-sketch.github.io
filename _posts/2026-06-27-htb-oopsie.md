@@ -66,7 +66,7 @@ Credential of username **"robert"**  can be found at ```/var/www/html/cdn-cgi/lo
 
 Check basic command such as ```sudo -l``` to check if I can easily use **sudo** to **privilege escalation**, unfortunately we can't. Next check **id** of the user. What i noticed is ```1001(bugtracker)```
 
-![sudo](sudo.png)
+![sudo](/assets/img/Oopsie/sudo.png)
 
 ## **Privilege Escalation**
 
@@ -74,8 +74,8 @@ I use ```find / -group bugtracker 2>/dev/null ``` to find any directory, folder,
 then i want to check behaviour of the program by ```strings bugtracker```. The result is it didn't use **absolute path**
 
 
-![bugtracker](bugtracker.png)
-![path](path.png)
+![bugtracker](/assets/img/Oopsie/bugtracker.png)
+![path](/assets/img/Oopsie/path.png)
 
 that mean we can ultilize teqnique called **"Path Hijacking"**.
 ```echo '/bin/bash' > /tmp/cat ```
@@ -85,11 +85,11 @@ that mean we can ultilize teqnique called **"Path Hijacking"**.
 
 then run the program again, this time we escalate as root
 
-![pathhijac](path_hijacking.png)
+![pathhijac](/assets/img/Oopsie/path_hijacking.png)
 
 
 
 Root flag can be found at ```/root```
 
-![rootflag](root_flag.png)
+![rootflag](/assets/img/Oopsie/root_flag.png)
 
