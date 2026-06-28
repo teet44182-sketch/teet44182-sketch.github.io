@@ -8,4 +8,12 @@ tags: [HTB, WEB, PATH-HIJACK, PRIVESC]
 
 เริ่มต้นด้วยการสแกนพอร์ตโดยใช้ Nmap เพื่อตรวจดูบริการที่เปิดอยู่บนเครื่องเป้าหมาย:
 
+![Nmap Scan Result|566](/assets/img/Oopsie/icon.png)
+
+
 ![Nmap Scan Result](/assets/img/Oopsie/nmap.png)
+
+ ### Opened port
+
+- 22  ssh port
+- 80 http port
