@@ -13,7 +13,7 @@ tags: [HTB, WEB, PATH-HIJACK, PRIVESC]
 
 ![Nmap Scan Result](/assets/img/Oopsie/nmap.png)
 
- ### Opened port
+ **Opened port**
 
 - 22  ssh port
 - 80 http port
