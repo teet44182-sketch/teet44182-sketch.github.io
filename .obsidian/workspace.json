@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2026-06-27-htb-oopsie.md",
+                "file": "_posts/Oopsie.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "2026-06-27-htb-oopsie"
+              "title": "Oopsie"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2026-06-27-htb-oopsie.md",
+                "file": "_posts/Oopsie.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2026-06-27-htb-oopsie"
+              "title": "Backlinks for Oopsie"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2026-06-27-htb-oopsie.md",
+                "file": "_posts/Oopsie.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2026-06-27-htb-oopsie"
+              "title": "Outgoing links from Oopsie"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2026-06-27-htb-oopsie.md",
+                "file": "_posts/Oopsie.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026-06-27-htb-oopsie"
+              "title": "Outline of Oopsie"
             }
           }
         ]
@@ -185,8 +185,9 @@
   },
   "active": "b5eca71bca6566a9",
   "lastOpenFiles": [
-    "assets/img/Oopsie/listener.png",
     "_posts/2026-06-27-htb-oopsie.md",
+    "_posts/Oopsie.md",
+    "assets/img/Oopsie/listener.png",
     "Pasted image 20260628192047.png",
     "Pasted image 20260628192018.png",
     "Pasted image 20260628191153.png",
