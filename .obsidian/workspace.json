@@ -183,20 +183,20 @@
       "bases:Create new base": false
     }
   },
-  "active": "b5eca71bca6566a9",
+  "active": "3a451c65b9d17900",
   "lastOpenFiles": [
     "_posts/2026-06-27-htb-oopsie.md",
-    "assets/img/Oppsie/root_flag.png",
-    "assets/img/Oppsie/listener.png",
-    "assets/img/Oppsie/icon.png",
-    "assets/img/Oppsie/login.png",
-    "assets/img/Oppsie/su_robert.png",
-    "assets/img/Oppsie/home_page.png",
-    "assets/img/Oppsie/gobuster.png",
-    "assets/img/Oppsie/foothold.png",
-    "assets/img/Oppsie/user_flag.png",
-    "assets/img/Oppsie/upload.png",
-    "assets/img/Oppsie",
+    "assets/img/Oopsie/root_flag.png",
+    "assets/img/Oopsie/listener.png",
+    "assets/img/Oopsie/icon.png",
+    "assets/img/Oopsie/login.png",
+    "assets/img/Oopsie/su_robert.png",
+    "assets/img/Oopsie/home_page.png",
+    "assets/img/Oopsie/gobuster.png",
+    "assets/img/Oopsie/foothold.png",
+    "assets/img/Oopsie/user_flag.png",
+    "assets/img/Oopsie/upload.png",
+    "assets/img/Oopsie",
     "assets/img"
   ]
 }

@@ -6,4 +6,6 @@ TAGS: [HTB, WEB, PATH-HIJACK, PRIVESC]
 
 **Enumeration**
 
-![คำอธิบายรูปภาพ](/assets/img/Oppsie/nmap.png)
+![คำอธิบายรูปภาพ](/assets/img/Oopsie/nmap.png)
+
+ho
