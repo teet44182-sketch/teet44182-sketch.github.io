@@ -6,7 +6,7 @@ tags: [HTB, WEB, PATH-HIJACK, PRIVESC]
 
 ## **Enumeration**
 
-เริ่มต้นด้วยการสแกนพอร์ตโดยใช้ Nmap เพื่อตรวจดูบริการที่เปิดอยู่บนเครื่องเป้าหมาย:
+Initiate recon by **nmap** command:
 
 ![Icon](/assets/img/Oopsie/icon.png)
 
