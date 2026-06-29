@@ -1,7 +1,7 @@
 ---
 title: Hack The Box - Vaccine Writeup
 categories: [CYBERSECURITY, PENTEST]
-tags: [HTB, WEB, SUID, PRIVESC]
+tags: [HTB, WEB, SUID, PRIVESC, PASSWORD_CRACKING]
 ---
  # **Vaccine**
 
@@ -56,7 +56,32 @@ Just a moment, found a credential for us :
 
 Save it as txt file : ```echo "2cb42f8734ea607eefed3b70af13bbd3" > admin.txt ```
 We can identify its type by hash length of 32 characters which correspond to **MD5** hash. 
+Next, let john cracks again with **MD5** format : ```john --format=raw-md5 --wordlist=/usr/share/wordlists/rockyou.txt admin```
+
+Get the result by indicate MD5 format: ```john --show --format=raw-md5 admin.txt```
+The password is **qwerty789**
 ![admin.txt](/assets/img/Vaccine/qwerty.png)
+
+I use that thing to get in to admin's dashboard page. They have search function and its not sanitize input. So, Its vulnerable to **SQL injection(SQLi)** .
+For example, They throw an error when we put a single quote.
+
+```ERROR: unterminated quoted string at or near... LINE 1: Select * from cars where name ilike '%'%' ```
+
+![sqli](/assets/img/Vaccine/sqli.png)
+We use **sqlmap** to automate **sqli** plus get RCE in the end of process.
+
+Obtained cookie by use **Developer Tools** of browser and paste it to sqlmap command
+
+![cookie](/assets/img/Vaccine/cookie.png)
+But before we continue i have to open my listener : 
+```nc -lvnp 4444 ```
+![listener](/assets/img/Vaccine/listener.png)
+
+
+![sqlmap](/assets/img/Vaccine/sqlmap.png)
+
+
+
 
 
 
