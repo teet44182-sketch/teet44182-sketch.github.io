@@ -97,8 +97,23 @@ user flag can be found at ```/var/lib/postgresql ```
 
 ## **Privilege Escalation**
 
+Password of user **"postgres"** located in ```/var/www/html ```
+
+![userpass](/assets/img/Vaccine/userpass.png)
+
+We can run **sudo** command at some specific path :
+```/bin/vi /etc/postgresql/11/main/pg_hba.conf ```
+
+To use this advantage : ```sudo /bin/vi /etc/postgresql/11/main/pg_hba.conf```
+![sudo](/assets/img/Vaccine/sudo.png)
 
 
+![vi](/assets/img/Vaccine/vi.png)
+
+
+![vi2](/assets/img/Vaccine/vi2.png)
+
+![rootflag](/assets/img/Vaccine/rootflag.png)
 
 
 
