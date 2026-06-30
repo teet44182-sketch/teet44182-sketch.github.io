@@ -101,8 +101,11 @@ Password of user **"postgres"** located in ```/var/www/html ```
 
 ![userpass](/assets/img/Vaccine/userpass.png)
 
-We can run **sudo** command at some specific path :
-```/bin/vi /etc/postgresql/11/main/pg_hba.conf ```
+Before anything else we have to upgrade shell to terminal 
+by ```python3 -c 'import pty;pty.spawn("/bin/bash")' ```
+ Check any file that I can run **sudo** command by ```sudo -l``` :
+
+After that It showed a line that said```/bin/vi /etc/postgresql/11/main/pg_hba.conf ```
 
 To use this advantage : ```sudo /bin/vi /etc/postgresql/11/main/pg_hba.conf```
 ![sudo](/assets/img/Vaccine/sudo.png)
