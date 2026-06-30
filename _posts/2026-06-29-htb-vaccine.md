@@ -107,12 +107,13 @@ We can run **sudo** command at some specific path :
 To use this advantage : ```sudo /bin/vi /etc/postgresql/11/main/pg_hba.conf```
 ![sudo](/assets/img/Vaccine/sudo.png)
 
-
+I now run **vi** editor as root permission, **fork** the process by ```:set shell=/bin/sh ```.  The reason is we unofficially get root shell but what we have is root permission from this exact vi configuration file. All we need to do is open another shell from this point.
 ![vi](/assets/img/Vaccine/vi.png)
 
-
+Followed by : ```:shell ``` 
 ![vi2](/assets/img/Vaccine/vi2.png)
 
+Root flag obtained from ```/root ```
 ![rootflag](/assets/img/Vaccine/rootflag.png)
 
 
