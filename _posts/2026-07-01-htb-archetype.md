@@ -31,7 +31,7 @@ After the connection was established, the file called **"prod.dtsConfig"** was d
 ![prod](/assets/img/Archetype/prod.png)
 
 
-We obtained credential of user **"sql_svc"** whose password  is**"M3g4c0rp123".  Since **mssqlclient** is not built-in on the Kali machine, we use **impacket-mssqlclient** instead.
+We obtained credential of user **"sql_svc"** whose password  is **"M3g4c0rp123"** .  Since **mssqlclient** is not built-in on the Kali machine, we use **impacket-mssqlclient** instead.
 
 to establish a connection use ```impacket-mssql username:password@hostname -windows-auth ``` the reason for -windows-auth is because the username is **"ARCHETYPE\sql_svc"** where ARCHETYPE\ is the domain name. it's not native MSSQL server account. 
 
@@ -87,9 +87,9 @@ To enumerate vulnerability on windows, use **winPEAS**. we will use the same met
 Use **iwr** (Inwoke web request) to download the file, then execute it to trigger vulnerability enumeration
 ![winpeasxp_cmdshell](/assets/img/Archetype/winpeas_xp_cmdshell.png)
 
-![winpeas.exe|697](/assets/img/Archetype/winpeas.exe.png)
+![winpeas.exe](/assets/img/Archetype/winpeas.exe.png)
 
-Here is a brief of the procedure :s
+Here is a brief of the procedure :
 ![wp](/assets/img/Archetype/wp.png)
 
 
