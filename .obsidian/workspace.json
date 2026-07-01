@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2026-07-01-htb-archetype.md",
+                "file": "_posts/2026-06-27-htb-oopsie.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-07-01-htb-archetype"
+              "title": "2026-06-27-htb-oopsie"
             }
           }
         ]
@@ -185,9 +185,9 @@
   },
   "active": "a61121f6b4dd70c1",
   "lastOpenFiles": [
+    "_posts/2026-07-01-htb-archetype.md",
     "_posts/2026-06-29-htb-vaccine.md",
     "_posts/2026-06-27-htb-oopsie.md",
-    "_posts/2026-07-01-htb-archetype.md",
     "Untitled 1.canvas",
     "README.md",
     "Untitled.md",
