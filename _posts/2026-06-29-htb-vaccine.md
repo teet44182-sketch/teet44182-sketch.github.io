@@ -20,7 +20,7 @@ Initiate reconnaissance by **nmap** command :
 
 The first priority for me is **ftp** because we might get **anonymous** access without password
 Luckily, got into ftp service. Next I start gathering anything that should benefits me.
-Download a zip file call  **"backup.zip"** by **get** command.   ```backup ```
+Download a zip file call  **"backup.zip"** by **get** command. 
 
 ![ftp](/assets/img/Vaccine/ftp.png)
 

