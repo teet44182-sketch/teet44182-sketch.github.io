@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2026-06-29-htb-vaccine.md",
+                "file": "_posts/2026-07-01-htb-archetype.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-06-29-htb-vaccine"
+              "title": "2026-07-01-htb-archetype"
             }
           }
         ]
@@ -185,19 +185,21 @@
   },
   "active": "b5eca71bca6566a9",
   "lastOpenFiles": [
-    "assets/img/Vaccine/vi.png",
-    "assets/img/Vaccine/vi2.png",
-    "assets/img/Vaccine/userflag2.png",
-    "assets/img/Vaccine/zip2john.png",
+    "assets/img/Archetype/catprod.png",
     "assets/img/fav.png",
     "assets/img/kisaki.png",
     "assets/img/smet.png",
+    "_posts/2026-07-01-htb-archetype.md",
+    "assets/img/Archetype/python_200_nc.png",
+    "assets/img/Archetype/ps_history.png",
+    "assets/img/Archetype/prod.png",
+    "assets/img/Archetype/nmap.png",
+    "assets/img/Archetype/nc.png",
+    "assets/img/Archetype/mssql.png",
+    "assets/img/Archetype/listener.png",
+    "assets/img/Archetype",
     "_posts/2026-06-29-htb-vaccine.md",
     "_posts/2026-06-27-htb-oopsie.md",
-    "assets/img/Vaccine/cookie.png",
-    "assets/img/Vaccine/sudo.png",
-    "assets/img/Vaccine/ftp.png",
-    "assets/img/Vaccine/icon.png",
     "_includes/head/custom.html",
     "_includes/head/New Python File.py",
     "_includes/head",
@@ -207,7 +209,6 @@
     "_includes/New Text Document.txt",
     "_includes",
     "New folder",
-    "_includes/head.txt",
     "_posts/2026-06-28-Oopsie.md",
     "bugt.md",
     "Untitled 1.canvas",
