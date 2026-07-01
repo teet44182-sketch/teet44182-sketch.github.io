@@ -1,7 +1,7 @@
 ---
 title: Hack The Box - Oopsie Writeup
 categories: [CYBERSECURITY, PENTEST]
-tags: [HTB, WEB, PATH-HIJACK, PRIVESC]
+tags: [HTB, WEB, PATH-HIJACK, PRIVESC, LINUX]
 ---
  # **Oopsie**
  

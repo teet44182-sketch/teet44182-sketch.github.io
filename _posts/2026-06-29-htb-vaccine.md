@@ -1,7 +1,7 @@
 ---
 title: Hack The Box - Vaccine Writeup
 categories: [CYBERSECURITY, PENTEST]
-tags: [HTB, WEB, SUID, PRIVESC, PASSWORD_CRACKING]
+tags: [HTB, WEB, SUID, PRIVESC, PASSWORD_CRACKING, LINUX]
 ---
  # **Vaccine**
 

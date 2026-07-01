@@ -1,7 +1,7 @@
 ---
 title: Hack The Box - Archetype Writeup
 categories: [CYBERSECURITY, PENTEST]
-tags: [HTB, PRIVESC, PASSWORD_CRACKING]
+tags: [HTB, PRIVESC, PASSWORD_CRACKING, WINDOWS]
 ---
  # **Archetype**
 
