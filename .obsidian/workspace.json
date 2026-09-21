@@ -11,14 +11,17 @@
             "id": "a61121f6b4dd70c1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "_posts/2026-08-18-htb-nexus.md",
-                "mode": "source",
-                "source": false
+                "file": "Untitled 2.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
+                }
               },
-              "icon": "lucide-file",
-              "title": "2026-08-18-htb-nexus"
+              "icon": "lucide-layout-dashboard",
+              "title": "Untitled 2"
             }
           }
         ]
@@ -41,7 +44,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -183,14 +188,16 @@
       "bases:Create new base": false
     }
   },
-  "active": "a61121f6b4dd70c1",
+  "active": "3a451c65b9d17900",
   "lastOpenFiles": [
-    "_posts/2026-07-01-htb-archetype.md",
+    "README.md",
+    "Untitled.canvas",
+    "Untitled 1.canvas",
+    "Untitled 2.canvas",
     "_posts/2026-08-18-htb-nexus.md",
+    "_posts/2026-07-01-htb-archetype.md",
     "_posts/2026-06-27-htb-oopsie.md",
     "_posts/2026-06-29-htb-vaccine.md",
-    "Untitled 1.canvas",
-    "README.md",
     "Untitled.md",
     "assets/img/Archetype/catprod.png",
     "assets/img/fav.png",
@@ -213,7 +220,6 @@
     "_includes",
     "New folder",
     "_posts/2026-06-28-Oopsie.md",
-    "bugt.md",
-    "Untitled.canvas"
+    "bugt.md"
   ]
 }
