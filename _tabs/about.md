@@ -8,11 +8,8 @@ order: 4
 
 I am a **Computer Science student** with a strong focus on **Cybersecurity** and **Penetration Testing**. I enjoy hands-on practice through **Hack The Box** and various security labs to sharpen my practical skills.
 
-My main interests include:
 
-- **Web Security** — SQL Injection, XSS, LFI, Authentication flaws, Access Control issues
-- **Network Security** — TCP/IP, VLAN, Subnetting, Static Routing, ACL
-- **System Security** — Linux and Windows hardening and enumeration
+
 
 I am currently looking for an **internship opportunity** in Penetration Testing or Vulnerability Assessment.
 
@@ -20,7 +17,7 @@ I am currently looking for an **internship opportunity** in Penetration Testing 
 
 ## Skills
 
-### 🛡️ Cybersecurity
+### Cybersecurity
 
 - Nmap
 - Burp Suite
@@ -28,7 +25,7 @@ I am currently looking for an **internship opportunity** in Penetration Testing 
 - Wireshark
 - Metasploit Framework
 
-### 🌐 Web Security
+### Web Security
 
 - SQL Injection
 - XSS
@@ -36,7 +33,7 @@ I am currently looking for an **internship opportunity** in Penetration Testing 
 - Authentication
 - Access Control
 
-### 🔌 Networking
+###  Networking
 
 - TCP/IP
 - VLAN
@@ -44,14 +41,14 @@ I am currently looking for an **internship opportunity** in Penetration Testing 
 - Static Routing
 - ACL
 
-### 💻 Programming
+### Programming
 
 - Python
 - Java
 - SQL
 - React
 
-### 🖥️ Operating Systems
+### Operating Systems
 
 - Linux
 - Windows

@@ -10,7 +10,7 @@ order: 5
 
 ---
 
-### 🏨 California Love Hotel
+### California Love Hotel
 
 **Network Infrastructure Project**
 
@@ -30,7 +30,7 @@ order: 5
 
 ---
 
-### 🌏 Tourism Website
+### Tourism Website
 
 **Full-Stack Web Application**
 
@@ -45,7 +45,7 @@ order: 5
 
 ---
 
-### 🏥 Hospital DBMS
+### Hospital DBMS
 
 **Database Management System**
 
@@ -61,7 +61,7 @@ order: 5
 
 ---
 
-## 🔗 Links
+## Links
 
 - **GitHub:** [github.com/teet44182-sketch](https://github.com/teet44182-sketch/)
 - **Hack The Box:** [HTB Profile](https://profile.hackthebox.com/profile/019e66b8-8772-7275-9684-cbe0799eb9f4)
